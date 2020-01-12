@@ -1,0 +1,2 @@
+# Function dependencies, for example:
+google-cloud-datastore==1.8.0
