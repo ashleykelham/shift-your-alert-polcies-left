@@ -1,8 +1,10 @@
 from google.cloud import datastore
+import os
+
 client = datastore.Client()
 
 def alerts(request):
-    key = client.key('alerts', 1234)
+    key = client.key('alerts-' + os.environ['ENV'], 1234)
     entity = datastore.Entity(key=key)
     entity.update({
         'foo': u'bar',
@@ -10,4 +12,4 @@ def alerts(request):
         'qux': False,
     })
     client.put(entity)
-    return request
+    return 'success'
