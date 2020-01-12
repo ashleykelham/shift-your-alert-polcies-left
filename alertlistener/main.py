@@ -8,7 +8,7 @@ def alerts(request):
     incident = request_json['incident']
     state = incident['state']
     name = incident['policy_name']
-    incident_id = incident['incdent_id']
+    incident_id = incident['incident_id']
     key = client.key('alerts-' + os.environ['ENV'], incident_id)
 
     if state == 'open':
