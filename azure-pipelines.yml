@@ -17,9 +17,15 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/function'
+    SourceFolder: '$(Build.SourcesDirectory)/slowfunction'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/slowfunction'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/alertlistener'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/alertlistener'
 
 - task: PublishBuildArtifacts@1
   inputs:
