@@ -28,4 +28,8 @@ def alerts(request):
     elif request.method == 'GET':
         query = client.query(kind=kind)
         results = list(query.fetch(limit=50))
-        return json.dumps(results, indent=2)
+        output = {
+            "count": results.count,
+            "alerts": results
+            }
+        return json.dumps(output, indent=2)
