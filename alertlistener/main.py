@@ -29,7 +29,7 @@ def alerts(request):
         query = client.query(kind=kind)
         results = list(query.fetch(limit=50))
         output = {
-            "count": results.count,
-            "alerts": results
+            "count": results.count
             }
-        return json.dumps(output, indent=2)
+        output["alerts"].append(results) 
+        return json.dumps(output)
