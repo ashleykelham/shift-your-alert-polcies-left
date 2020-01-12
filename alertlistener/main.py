@@ -31,5 +31,5 @@ def alerts(request):
         output = {
             "count": results.count
             }
-        output["alerts"].append(results) 
+        output["alerts"] = results 
         return json.dumps(output)
