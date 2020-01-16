@@ -1,0 +1,1 @@
+gcloud functions deploy slowfunction-$env --allow-unauthenticated --entry-point hello_world --runtime python37 --trigger-http --project $gcpProjectId --memory 128MB

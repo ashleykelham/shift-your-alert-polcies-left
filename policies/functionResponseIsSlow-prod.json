@@ -1,0 +1,29 @@
+{
+  "combiner": "OR",
+  "conditions": [
+    {
+      "conditionThreshold": {
+        "aggregations": [
+          {
+            "alignmentPeriod": "60s",
+            "crossSeriesReducer": "REDUCE_MEAN",
+            "perSeriesAligner": "ALIGN_DELTA"
+          }
+        ],
+        "comparison": "COMPARISON_GT",
+        "duration": "60s",
+        "filter": "metric.type=\"cloudfunctions.googleapis.com/function/execution_times\" resource.type=\"cloud_function\" resource.label.\"function_name\"=\"slowfunction-prod\"",
+        "thresholdValue": 1999000000.0,
+        "trigger": {
+          "percent": 30.0
+        }
+      },
+      "displayName": "Average invocation latency for slowfunction-prod"
+    }
+  ],
+  "displayName": "Function Latency Over 2s",
+  "enabled": true,
+  "notificationChannels": [
+    "projects/$gcpProjectId/notificationChannels/3863597617308156172"
+  ]
+}

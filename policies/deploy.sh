@@ -1,0 +1,1 @@
+gcloud alpha monitoring policies create --policy-from-file="functionResponseIsSlow-$env.json"
