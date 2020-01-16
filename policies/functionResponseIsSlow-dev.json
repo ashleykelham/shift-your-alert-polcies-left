@@ -21,7 +21,7 @@
       "displayName": "Average invocation latency for slowfunction-dev"
     }
   ],
-  "displayName": "Function Latency Over 2s",
+  "displayName": "Function Latency Over 2s dev",
   "enabled": true,
   "notificationChannels": [
     "projects/$gcpProjectId/notificationChannels/3390203689803760974"

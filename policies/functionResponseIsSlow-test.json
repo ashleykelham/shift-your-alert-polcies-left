@@ -21,7 +21,7 @@
       "displayName": "Average invocation latency for slowfunction-test"
     }
   ],
-  "displayName": "Function Latency Over 2s",
+  "displayName": "Function Latency Over 2s test",
   "enabled": true,
   "notificationChannels": [
     "projects/$gcpProjectId/notificationChannels/13905503315551385245"

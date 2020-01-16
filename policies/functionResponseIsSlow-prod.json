@@ -21,7 +21,7 @@
       "displayName": "Average invocation latency for slowfunction-prod"
     }
   ],
-  "displayName": "Function Latency Over 2s",
+  "displayName": "Function Latency Over 2s prod",
   "enabled": true,
   "notificationChannels": [
     "projects/$gcpProjectId/notificationChannels/3863597617308156172"
