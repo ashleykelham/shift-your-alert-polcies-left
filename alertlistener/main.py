@@ -29,6 +29,6 @@ def alerts(request):
         query = client.query(kind=kind)
         results = list(query.fetch(limit=50))
         output = {
-            "count": results.count
+            "count": len(results)
             }
         return json.dumps(output)
