@@ -13,6 +13,8 @@ Most of the files need the values assigned for
 * $env - This is your deployment environment eg dev, test or prod
 * $gcpProjectId - The Google Cloud project Id of the project you are deploying to
 
+The project is split into directories each relating to a different component
+
 ### slowfunction
 This is a Google Cloud Function written in python 3.7 that simulates a slow responding API. 
 
