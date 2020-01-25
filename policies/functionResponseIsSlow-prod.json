@@ -24,6 +24,6 @@
   "displayName": "Function Latency Over 2s prod",
   "enabled": true,
   "notificationChannels": [
-    "projects/$gcpProjectId/notificationChannels/3863597617308156172"
+    ADD-NOTIFICATION-V=CHANNEL-NAME
   ]
 }

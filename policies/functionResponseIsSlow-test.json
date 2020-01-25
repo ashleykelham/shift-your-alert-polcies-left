@@ -24,6 +24,6 @@
   "displayName": "Function Latency Over 2s test",
   "enabled": true,
   "notificationChannels": [
-    "projects/$gcpProjectId/notificationChannels/13905503315551385245"
+    ADD-NOTIFICATION-V=CHANNEL-NAME
   ]
 }

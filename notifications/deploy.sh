@@ -1,0 +1,1 @@
+gcloud alpha monitoring channels create --channel-content-from-file="channel-$env.json"

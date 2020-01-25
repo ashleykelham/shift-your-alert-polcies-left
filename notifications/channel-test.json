@@ -1,0 +1,8 @@
+{
+  "displayName": "shift-alerting-left-test",
+  "enabled": true,
+  "labels": {
+    "url": "https://us-central1-$gcpProjectId.cloudfunctions.net/alertlistener-test"
+  },
+  "type": "webhook_tokenauth"
+}
